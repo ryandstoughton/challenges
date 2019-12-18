@@ -1,5 +1,5 @@
 const readline = require('readline');
-const reversebinary = require('./reversebinary');
+const { reversebinary } = require('./reversebinary');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 });
 
 rl.on('line', data => {
-    const num = data.trim().map(s => parseInt(s, 10));
-    reversebinary(num);
+    const num = parseInt(data.trim(), 10);
+    console.log(reversebinary(num));
     rl.close();
 });

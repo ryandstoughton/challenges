@@ -1,4 +1,4 @@
-function reversebinary(num) {
+function reversebinary(num) {           // num = 4
     return parseInt(num.toString(2)     // 4 -> "100"
         .split('')                      // "100" -> ["1", "0", "0"]
         .reverse()                      // ["1", "0", "0"] -> ["0", "0", "1"]
